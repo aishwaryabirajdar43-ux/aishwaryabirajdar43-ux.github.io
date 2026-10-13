@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG9CZ1QLBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KG9CZ1QLBJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="KavyaVaani - Marathi poems, shayari, captions, wishes and acting dialogues.">
+<title>KavyaVaani — शब्द जे मनाला स्पर्शून जातात</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#fff5fb;color:#54304b}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:0;font-family:inherit}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px 5%;background:#fff;box-shadow:0 2px 12px #67244c12}
+.logo{font-family:Georgia,serif;font-style:italic;font-size:25px;color:#a0448d;font-weight:bold}
+.nav{display:flex;flex-wrap:wrap;gap:13px;font-size:12px}
+.nav a:hover{color:#b83b9c}
+.hero{padding:55px 6%;background:linear-gradient(90deg,#fff1f9ef,#fff1f955),url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=85') center/cover;min-height:270px}
+.hero small{font-family:Georgia,serif;font-style:italic;font-size:20px;color:#a0448d}
+.hero h1{font-family:Georgia,serif;font-style:italic;font-size:43px;color:#9a3488;margin:10px 0}
+.hero p{max-width:420px;line-height:1.8;font-size:14px}
+.search{display:flex;max-width:430px;margin-top:20px;background:white;border:1px solid #ead4e7;border-radius:30px;overflow:hidden}
+.search input{border:0;outline:0;padding:13px;min-width:0;flex:1}
+.search button{background:#a52e96;color:white;padding:0 22px}
+main{max-width:1100px;margin:auto;padding:20px 16px}
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:20px;align-items:center;background:#fff0f8;border:1px solid #f0d7e9;border-radius:22px;padding:18px;margin-bottom:28px}
+.feature img{width:100%;height:190px;object-fit:cover;border-radius:13px}
+.tag{display:inline-block;background:#f8d9ee;color:#8c3277;padding:7px 12px;border-radius:25px;font-size:12px}
+.feature h2{color:#983a83;margin:12px 0}
+.feature p{line-height:1.8;font-size:14px;white-space:pre-line}
+.feature button{background:#fff8fc;color:#913a7e;border:1px solid #efd6e8;border-radius:25px;padding:11px 18px;margin-top:8px}
+.heading{font-size:21px;margin:26px 0 15px;color:#69375f}
+#categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:25px}
+.category{min-height:95px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(145deg,#f6e3fa,#fce7f3);color:#753d8a;border:1px solid #f0d9ef;border-radius:13px;padding:12px 6px;font-size:13px}
+.category .ico{font-size:25px}
+.category.active{background:linear-gradient(145deg,#f2d8f3,#fbdce9);color:#a0448d;border:2px solid #e9c5e4}
+
+#poems{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+
+.poem-item{
+background:#fff;
+border:1px solid #f0dfe9;
+border-radius:15px;
+padding:18px;
+margin-bottom:16px;
+box-shadow:0 4px 14px #6d2b4d0c;
+line-height:1.9;
+white-space:pre-line;
+           }
+.poem-category{font-size:12px;color:#a0448d;margin-bottom:8px}
+.poem-text{font-size:15px;overflow-wrap:anywhere}
+.poem-actions{display:flex;gap:10px;margin-top:10px}
+.poem-actions button{background:#f8e5f0;color:#88416f;padding:8px 16px;border-radius:20px;font-size:13px}
+.empty{padding:20px;text-align:center}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:25px 0}
+details{background:#fff;border:1px solid #eedce8;border-radius:12px;padding:14px;font-size:13px}
+summary{cursor:pointer;font-weight:bold;color:#784268}
+details p{line-height:1.8}
+footer{background:linear-gradient(90deg,#a97ab3,#bd7eac);color:#fff;padding:22px 5%;font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){
+.topbar{justify-content:center}
+.nav{justify-content:center}
+.hero{padding:35px 6%;min-height:260px}
+.hero h1{font-size:35px}
+.feature{grid-template-columns:1fr}
+.feature img{height:190px}
+#categories{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.category{min-height:88px;font-size:12px}
+.category .ico{font-size:23px}
+.info-grid{grid-template-columns:1fr}
+}
+@media(max-width:380px){
+#categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero h1{font-size:31px}
+}
+</style>
+</head>
+
+<body>
+<header class="topbar">
+<a class="logo" href="#">✨ KavyaVaani 🪶</a>
+<nav class="nav">
+<a href="#">⌂ Home</a>
+<a href="#about">आमच्याबद्दल</a>
+<a href="#contact">संपर्क</a>
+<a href="#categories">Categories</a>
+<a href="#privacy">गोपनीयता</a>
+<a href="#disclaimer">अस्वीकरण</a>
+</nav>
+</header>
+
+<section class="hero">
+<small>Welcome to</small>
+<h1>KavyaVaani ♡</h1>
+<strong>शब्द जे मनाला स्पर्शून जातात...</strong>
+<p>सुंदर कविता, प्रेम शायरी, भावनिक ओळी, सुविचार, कॅप्शन, वाढदिवसाच्या शुभेच्छा आणि अभिनयासाठी संवाद.</p>
+<div class="search">
+<input id="search" type="search" placeholder="कविता, dialogue, shayari शोधा..." oninput="renderPoems()">
+<button onclick="renderPoems()">शोधा</button>
+</div>
+</section>
+
+<main>
+<section class="feature">
+<div>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="सुंदर निसर्ग">
+</div>
+<div>
+<span class="tag">❀ आजची खास कविता</span>
+<h2>स्वप्न अजूनही आहेत...</h2>
+<p>थोडीशी साथ, थोडं प्रेम, थोडा विश्वास,
+आणि पुन्हा एकदा नव्याने जगण्याची आस...
+स्वप्न अजूनही आहेत,
+फक्त त्यांना पूर्ण करायचं आहे...</p>
+<strong>♡ — KavyaVaani</strong><br>
+<button onclick="selectCategory('मराठी कविता')">वाचा पूर्ण कविता →</button>
+</div>
+</section>
+
+<h2 class="heading">❀ कॅटेगरीजनुसार कविता</h2>
+<div id="categories"></div>
+
+<h2 class="heading" id="poemHeading">🌸 सर्व कविता आणि शायरी</h2>
+<div id="poems"></div>
+
+<div class="info-grid">
+<details id="about">
+<summary>आमच्याबद्दल</summary>
+<p>KavyaVaani ही मराठी वेबसाइट आहे. येथे कविता, शायरी, कॅप्शन, वाढदिवसाच्या शुभेच्छा, मैत्रीचे विचार आणि अभिनयासाठी संवाद मिळतील.</p>
+</details>
+<details id="contact">
+<summary>संपर्क</summary>
+<p>तुमच्या सूचना, प्रश्न आणि अभिप्राय आमच्यासाठी महत्त्वाचे आहेत.</p>
+</details>
+<details id="privacy">
+<summary>गोपनीयता धोरण</summary>
+<p>शोधण्यासाठी दिलेला मजकूर तुमच्या ब्राउझरमध्ये वापरला जातो. वैयक्तिक माहिती गोळा करण्याची सुविधा या कोडमध्ये जोडलेली नाही.</p>
+</details>
+<details id="disclaimer">
+<summary>अस्वीकरण</summary>
+<p>या वेबसाइटवरील मजकूर मनोरंजन आणि सर्जनशील वापरासाठी आहे.</p>
+</details>
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+<span>© 2026 KavyaVaani • मनातले शब्द, तुमच्यासाठी ❤️</span>
+<span><a href="#about">आमच्याबद्दल</a>　<a href="#contact">संपर्क</a>　<a href="#privacy">गोपनीयता</a>　<a href="#disclaimer">अस्वीकरण</a></span>
+</div>
+</footer>
+
+<script>
+const categories=[
+["सगळे","▦"],["मराठी कविता","✍"],["Love Shayari","♡"],
+["Sad & Emotional","☁"],["Attitude","♛"],["Acting Dialogues","▣"],
+["Captions","▧"],["Birthday Wishes","🎂"],["Friendship","♧"],
+["Marathi Quotes","✦"]
+];
+
+const poems=[
+{c:"मराठी कविता",t:"मनातल्या भावना शब्दांत सांगता येत नाहीत,\nकाही गोष्टी फक्त डोळ्यांतून कळतात. ❤️"},
+{c:"मराठी कविता",t:"स्वप्न मोठी असू देत,\nप्रयत्न रोजचे असू देत,\nयश एक दिवस नक्कीच मिळेल. ✨"},
+{c:"मराठी कविता",t:"स्वप्न अजूनही आहेत,\nफक्त त्यांना पूर्ण करायचं आहे,\nमनात आशा जिवंत ठेवायची आहे. 🌸"},
+{c:"मराठी कविता",t:"आयुष्य सुंदर बनवायचं असेल,\nतर प्रत्येक दिवस हसून जगायचा असतो. 🌷"},
+{c:"मराठी कविता",t:"कधी उन्हात चालावं लागतं,\nतेव्हाच सावलीची किंमत कळते. 🌿"},
+{c:"मराठी कविता",t:"शब्द कमी पडतात कधी,\nमनातलं सांगण्यासाठी,\nडोळेच पुरेसे असतात,\nभावना समजण्यासाठी. ❤️"},
+{c:"मराठी कविता",t:"जिंकायचं आहे मला,\nस्वतःच्या मेहनतीवर,\nविश्वास आहे माझा,\nमाझ्या प्रत्येक प्रयत्नावर. 👑"},
+{c:"मराठी कविता",t:"प्रत्येक सकाळ नवी आशा घेऊन येते,\nप्रत्येक संध्याकाळ नवा अनुभव देऊन जाते. 🌅"},
+{c:"मराठी कविता",t:"मनात जपलेली स्वप्नं,\nएक दिवस खरी होतील,\nआजचे छोटे प्रयत्न,\nउद्याचं यश घडवतील. ✨"},
+{c:"मराठी कविता",t:"आठवणींच्या वाटेवर,\nकाही क्षण सुंदर भेटतात,\nकाही माणसं दूर जाऊनही,\nमनात कायम राहतात. 🌸"},
+
+{c:"Love Shayari",t:"तुझ्या एका हास्यात माझा दिवस खुलतो,\nतुझ्या आठवणींनी मन पुन्हा पुन्हा फुलतं. ❤️"},
+{c:"Love Shayari",t:"तू जवळ असलास की जग सुंदर वाटतं,\nतुझ्याशिवाय प्रत्येक क्षण अपुरा वाटतो. 💕"},
+{c:"Love Shayari",t:"तुझ्यासोबतचा प्रत्येक क्षण खास आहे,\nमाझ्या मनात तुझंच सुंदर स्थान आहे. 💗"},
+{c:"Love Shayari",t:"तुझं हसणं माझा आनंद,\nतुझं बोलणं माझं समाधान,\nतुझी साथ मिळाली की,\nपूर्ण होतं माझं स्वप्न. ❤️"},
+{c:"Love Shayari",t:"प्रेम म्हणजे फक्त शब्द नाहीत,\nतर प्रत्येक क्षणी दिलेली साथ आहे. 🌹"},
+{c:"Love Shayari",t:"तुझ्या आठवणी मनात राहतात,\nअगदी गाण्याच्या सुरांसारख्या,\nतू जवळ नसतानाही,\nजवळ असल्यासारख्या. 💞"},
+{c:"Love Shayari",t:"चंद्र सुंदर आहे रात्रीसाठी,\nफूल सुंदर आहे सुगंधासाठी,\nआणि तू खास आहेस,\nमाझ्या प्रत्येक आनंदासाठी. 🌙"},
+{c:"Love Shayari",t:"तुझ्यासोबत चालताना,\nवाट कितीही लांब असू दे,\nहातात हात असला की,\nप्रवास सुंदर असू दे. 💖"},
+
+{c:"Sad & Emotional",t:"हसणाऱ्या चेहऱ्यामागेही दुःख असतं,\nप्रत्येक शांत व्यक्तीच्या मनात वादळ असतं. 💔"},
+{c:"Sad & Emotional",t:"काही आठवणी पुसता येत नाहीत,\nकाही माणसं विसरता येत नाहीत. 🥀"},
+{c:"Sad & Emotional",t:"वेळ बदलतो, माणसं बदलतात,\nपण काही आठवणी कायम मनात राहतात. 🌹"},
+{c:"Sad & Emotional",t:"कधी कधी शांत राहणंच बरं,\nकारण प्रत्येकाला भावना समजत नाहीत. 🥀"},
+{c:"Sad & Emotional",t:"जवळची माणसं दूर गेली,\nकी आठवणी सोबत राहतात,\nमन कितीही समजावलं,\nतरी डोळे सगळं सांगतात. 💔"},
+{c:"Sad & Emotional",t:"काही प्रश्नांची उत्तरं नसतात,\nकाही वेदना दिसत नसतात,\nआणि काही आठवणी,\nमनातून कधी जात नसतात. 🌧️"},
+
+{c:"Attitude",t:"माझी ओळख मी स्वतः बनवणार,\nमाझ्या मेहनतीने माझं स्वप्न पूर्ण करणार. 👑"},
+{c:"Attitude",t:"मी शांत आहे म्हणजे कमजोर नाही,\nवेळ आल्यावर उत्तर द्यायला विसरत नाही. 🔥"},
+{c:"Attitude",t:"स्वतःवर विश्वास आहे,\nम्हणून कोणाशी तुलना नाही,\nमाझी वाट माझी आहे,\nआणि माझी स्वप्नंही खास आहेत. 👑"},
+{c:"Attitude",t:"पडले तरी पुन्हा उभी राहीन,\nहरले तरी पुन्हा प्रयत्न करीन,\nस्वतःची ओळख स्वतः घडवीन,\nआणि स्वप्नं पूर्ण करून दाखवीन. ✨"},
+{c:"Attitude",t:"माझी किंमत मला माहीत आहे,\nमाझ्या मेहनतीवर माझा विश्वास आहे. 🔥"},
+
+{c:"Acting Dialogues",t:"माझी कहाणी अजून संपलेली नाही,\nआता तर माझी खरी सुरुवात आहे! 🎬"},
+{c:"Acting Dialogues",t:"मला संधी मिळाली तर मी स्वतःला सिद्ध करून दाखवेन! ✨"},
+{c:"Acting Dialogues",t:"मी हरले असं समजू नका,\nमी फक्त नव्याने सुरुवात करतेय. 🎭"},
+{c:"Acting Dialogues",t:"माझ्या शांततेला कमजोरी समजू नका,\nवेळ आली की माझी ताकद दिसेल. 🔥"},
+{c:"Acting Dialogues",t:"स्वप्न पाहण्याची हिंमत आहे,\nतर ती पूर्ण करण्याची जिद्दही आहे! 👑"},
+
+{c:"Captions",t:"Simple life, beautiful thoughts. 🌸"},
+{c:"Captions",t:"आज स्वतःसाठी जगायचं,\nस्वतःवर प्रेम करायचं. 💖"},
+{c:"Captions",t:"छोटे क्षण, मोठा आनंद. 🌷"},
+{c:"Captions",t:"Smile more, worry less. ✨"},
+{c:"Captions",t:"स्वतःची वाट, स्वतःची ओळख. 👑"},
+
+{c:"Birthday Wishes",t:"तुझ्या आयुष्यात आनंद, प्रेम आणि यश भरभरून येवो. वाढदिवसाच्या खूप शुभेच्छा! 🎂"},
+{c:"Birthday Wishes",t:"तुझी प्रत्येक इच्छा पूर्ण होवो आणि आयुष्य आनंदाने भरून जावो. Happy Birthday! 🎉"},
+{c:"Birthday Wishes",t:"तुझ्या चेहऱ्यावरचं हसू कायम राहो,\nतुझं प्रत्येक स्वप्न पूर्ण होवो. वाढदिवसाच्या शुभेच्छा! 🎂"},
+{c:"Birthday Wishes",t:"नवीन वर्ष तुझ्यासाठी आनंद, यश आणि सुंदर आठवणी घेऊन येवो. 🎉"},
+
+{c:"Friendship",t:"मैत्री म्हणजे रोज बोलणं नाही,\nतर न बोलताही एकमेकांना समजून घेणं. 🤝"},
+{c:"Friendship",t:"खरी मैत्री वेळेनुसार बदलत नाही,\nती प्रत्येक परिस्थितीत साथ देते. 💛"},
+{c:"Friendship",t:"मित्र असावा असा,\nजो आनंदात हसेल,\nआणि दुःखाच्या वेळी,\nहात घट्ट धरून बसेल. 🤗"},
+{c:"Friendship",t:"काही नाती रक्ताची नसतात,\nतरी मनाच्या जवळ असतात,\nमैत्रीच्या रूपात ती,\nआयुष्य सुंदर करतात. 💛"},
+
+{c:"Marathi Quotes",t:"स्वतःवर विश्वास ठेवा,\nकारण तुमची ताकद तुम्हालाच ओळखायची आहे. 🌟"},
+{c:"Marathi Quotes",t:"छोट्या छोट्या प्रयत्नांतूनच,\nमोठ्या स्वप्नांची सुरुवात होते. ✨"},
+{c:"Marathi Quotes",t:"आज केलेली मेहनत,\nउद्या तुमची ओळख बनेल. 👑"},
+{c:"Marathi Quotes",t:"चुका म्हणजे शेवट नाही,\nत्या शिकण्याची नवी संधी असते. 🌱"},
+{c:"Marathi Quotes",t:"स्वतःची तुलना दुसऱ्याशी नको,\nकालच्या स्वतःपेक्षा आज चांगलं व्हा. 🌟"},
+  /* नवीन मराठी कविता */
+{c:"मराठी कविता",t:"मनात हजार स्वप्नं आहेत,\nडोळ्यांत नवी आशा आहे,\nप्रत्येक दिवस सांगतो मला,\nतुझ्यात अजून ताकद खास आहे. 🌸"},
+{c:"मराठी कविता",t:"रस्ता कठीण असला तरी,\nचालणं कधी सोडायचं नाही,\nस्वप्न पूर्ण होईपर्यंत,\nस्वतःवरचा विश्वास हरवायचा नाही. ✨"},
+{c:"मराठी कविता",t:"पावसाच्या थेंबांत आठवणी,\nवाऱ्याच्या झुळुकीत गाणी,\nनिसर्गाच्या या कुशीत,\nमनाला मिळते नवी कहाणी. 🌧️"},
+{c:"मराठी कविता",t:"आईच्या हातची माया,\nतिच्या शब्दांत प्रेम अपार,\nतिच्या आशीर्वादानेच,\nसुंदर होतो जीवनप्रवास. ❤️"},
+{c:"मराठी कविता",t:"आज थोडं शिकायचं,\nउद्या आणखी पुढे जायचं,\nकालपेक्षा आज चांगलं होऊन,\nस्वतःचं जग घडवायचं. 🌷"},
+{c:"मराठी कविता",t:"संध्याकाळच्या रंगांत,\nआठवणी अलगद उतरतात,\nकाही हसू देऊन जातात,\nकाही डोळे ओले करतात. 🌅"},
+{c:"मराठी कविता",t:"मनाला जपणारी माणसं,\nनशिबाने भेटत असतात,\nत्यांच्या छोट्याशा प्रेमाने,\nदिवस सुंदर होत असतात. 💕"},
+{c:"मराठी कविता",t:"स्वतःची ओळख घडवताना,\nअनेक वळणं येतील,\nजिद्द मनात ठेवली तर,\nयशाचे दरवाजे उघडतील. 👑"},
+{c:"मराठी कविता",t:"चांदण्यांच्या रात्रीत,\nमन स्वप्नांशी बोलतं,\nउद्याच्या नव्या आशेने,\nपुन्हा जगायला शिकतं. 🌙"},
+{c:"मराठी कविता",t:"थोडं हसू, थोडं प्रेम,\nथोडासा विश्वास हवा,\nआयुष्याच्या प्रत्येक वळणावर,\nआपुलकीचा सहवास हवा. 🌼"},
+
+/* नवीन Love Shayari */
+{c:"Love Shayari",t:"तुझ्या हसण्यात माझा आनंद आहे,\nतुझ्या सोबतीत मनाला विसावा आहे. ❤️"},
+{c:"Love Shayari",t:"तू समोर असताना शब्द हरवतात,\nआणि दूर असताना आठवणी बोलतात. 💕"},
+{c:"Love Shayari",t:"तुझ्यासोबतची छोटीशी भेट,\nमनात मोठी आठवण बनते. 🌹"},
+{c:"Love Shayari",t:"प्रेमाची सुंदर व्याख्या तू,\nमाझ्या हसण्यामागचं कारण तू. 💗"},
+{c:"Love Shayari",t:"हातात हात आणि मनात विश्वास,\nअसा सुंदर असावा आपल्या प्रेमाचा प्रवास. 💖"},
+{c:"Love Shayari",t:"तुझ्या एका मेसेजनेही,\nचेहऱ्यावर हसू येतं,\nकिती खास आहेस तू,\nहे मन पुन्हा पुन्हा सांगतं. 💌"},
+{c:"Love Shayari",t:"नातं सुंदर होतं तेव्हा,\nदोघेही एकमेकांना समजून घेतात,\nचुका झाल्या तरी प्रेमाने,\nपुन्हा जवळ येतात. 💞"},
+{c:"Love Shayari",t:"तुझ्या आठवणींचा सुगंध,\nमनात कायम दरवळतो,\nतुझा विचार आला की,\nप्रत्येक क्षण सुंदर वाटतो. 🌷"},
+{c:"Love Shayari",t:"प्रेमात मोठ्या भेटी नकोत,\nछोट्या काळजीत आनंद असतो,\n'जेवलीस का?' या प्रश्नातही,\nआपुलकीचा गोडवा असतो. ❤️"},
+{c:"Love Shayari",t:"तू सोबत असलास की,\nसाधे क्षणही खास होतात,\nदोन मनांच्या गप्पांमध्ये,\nनव्या आठवणी तयार होतात. 💑"},
+
+/* नवीन Sad & Emotional */
+{c:"Sad & Emotional",t:"काही गोष्टी मनातच राहतात,\nओठांपर्यंत येत नाहीत,\nकाही भावना अशा असतात,\nज्या शब्दांत मावत नाहीत. 💔"},
+{c:"Sad & Emotional",t:"हसणं सगळ्यांना दिसतं,\nपण मनातलं दुःख नाही,\nम्हणून प्रत्येक शांत चेहरा,\nनेहमी आनंदी असतो असं नाही. 🥀"},
+{c:"Sad & Emotional",t:"आठवणी मिटवता येत नाहीत,\nफक्त त्यांच्यासोबत जगायला शिकावं लागतं. 🌧️"},
+{c:"Sad & Emotional",t:"कधी उत्तर न देणंही,\nमनाची अवस्था सांगतं,\nशब्दांपेक्षा शांतता कधी,\nजास्त काही बोलून जाते. 💔"},
+{c:"Sad & Emotional",t:"ज्यांच्यासाठी मनापासून थांबलो,\nतेच कधी पुढे निघून गेले,\nआणि आम्ही मात्र आठवणींत,\nजुने क्षण शोधत राहिलो. 🥀"},
+{c:"Sad & Emotional",t:"वेळ सगळं शिकवतो,\nकोण आपलं कोण परकं,\nपण काही धडे शिकताना,\nमन होतं फार एकटं. 🌙"},
+{c:"Sad & Emotional",t:"डोळ्यांत पाणी असलं,\nतरी मन कमजोर नसतं,\nकधी कधी रडून घेतल्यावरच,\nपुन्हा उभं राहता येतं. 🌧️"},
+{c:"Sad & Emotional",t:"काही नाती संपतात,\nपण त्यांचा अर्थ संपत नाही,\nकाही लोक दूर जातात,\nपण आठवण दूर जात नाही. 💔"},
+{c:"Sad & Emotional",t:"मनात प्रश्न खूप असतात,\nउत्तरं मात्र कमी असतात,\nकाही जखमा दिसत नाहीत,\nपण वेदना खोल असतात. 🥀"},
+{c:"Sad & Emotional",t:"स्वतःला सावरताना,\nकधी स्वतःलाच वेळ द्यावा,\nसगळ्यांना समजून घेताना,\nस्वतःलाही समजून घ्यावं. ❤️‍🩹"},
+
+/* नवीन Attitude */
+{c:"Attitude",t:"माझं ध्येय माझं आहे,\nमाझी वाटही माझी आहे,\nलोक काय म्हणतील यापेक्षा,\nमाझ्या मेहनतीवर श्रद्धा आहे. 👑"},
+{c:"Attitude",t:"मी स्वतःची तुलना करत नाही,\nकारण माझा प्रवास वेगळा आहे. ✨"},
+{c:"Attitude",t:"शांत स्वभाव आहे माझा,\nपण स्वप्नं मोठी आहेत,\nमेहनत माझी ओळख,\nआणि जिद्द माझी ताकद आहे. 🔥"},
+{c:"Attitude",t:"माझ्या चुका माझे धडे,\nमाझे प्रयत्न माझी शान,\nएक दिवस मेहनतीनेच,\nमिळवेन माझी ओळख महान. 👑"},
+{c:"Attitude",t:"लोकांच्या मतांनी नाही,\nस्वतःच्या मूल्यांनी जगायचं,\nस्वतःवर प्रेम करून,\nस्वतःचं आयुष्य घडवायचं. 💫"},
+{c:"Attitude",t:"मी हळू चालले तरी चालेल,\nपण थांबणार नाही,\nमाझं स्वप्न पूर्ण करण्याची,\nजिद्द कधी सोडणार नाही. 🔥"},
+{c:"Attitude",t:"माझी ताकद माझा आत्मविश्वास,\nमाझं शस्त्र माझं ज्ञान,\nमेहनतीच्या जोरावर,\nघडवेन माझं स्थान. 🌟"},
+{c:"Attitude",t:"सगळ्यांना खूश ठेवण्यापेक्षा,\nस्वतःशी प्रामाणिक राहणं महत्त्वाचं. 💯"},
+{c:"Attitude",t:"अपयश आलं तरी,\nमी प्रयत्न सोडणार नाही,\nमाझ्या स्वप्नांसमोर,\nमी कधी हार मानणार नाही. 👑"},
+{c:"Attitude",t:"माझी ओळख माझ्या कामातून,\nमाझा अभिमान माझ्या संस्कारातून,\nआणि माझं यश माझ्या मेहनतीतून. ✨"},
+
+/* नवीन Acting Dialogues */
+{c:"Acting Dialogues",t:"माझी शांतता ही माझी कमजोरी नाही,\nती माझ्या पुढच्या पावलाची तयारी आहे! 🎭"},
+{c:"Acting Dialogues",t:"स्वप्न माझं आहे,\nम्हणून मेहनतही माझीच असेल,\nआणि यश मिळालं तर,\nओळखही माझीच असेल! 👑"},
+{c:"Acting Dialogues",t:"मला कमी समजण्याआधी,\nमाझा प्रवास एकदा पाहा,\nमी पडले असेन अनेकदा,\nपण प्रत्येक वेळी पुन्हा उभी राहिले! 🔥"},
+{c:"Acting Dialogues",t:"माझ्या डोळ्यांतली स्वप्नं,\nआता फक्त स्वप्नं राहणार नाहीत,\nएक दिवस माझी मेहनत,\nमाझी ओळख बनणार आहे! 🎬"},
+{c:"Acting Dialogues",t:"नशीब संधी देतं,\nपण ती संधी साधण्यासाठी,\nमेहनत स्वतःलाच करावी लागते! ✨"},
+{c:"Acting Dialogues",t:"मी कोणाची नक्कल करायला नाही,\nमाझी स्वतःची ओळख बनवायला आलेय! 🎭"},
+{c:"Acting Dialogues",t:"आज माझ्यावर हसणारे,\nउद्या माझा प्रवास पाहतील,\nकारण माझी जिद्द,\nमाझ्यापेक्षा जास्त बोलणार आहे! 🔥"},
+{c:"Acting Dialogues",t:"प्रत्येक पात्र मला काहीतरी शिकवतं,\nप्रत्येक भूमिका मला नवं बनवते,\nअभिनय माझ्यासाठी फक्त काम नाही,\nतो माझ्या मनाचा आवाज आहे! 🎬"},
+{c:"Acting Dialogues",t:"माझी कहाणी दुसऱ्यांनी लिहायची नाही,\nमाझ्या निर्णयांनी मी ती घडवणार आहे! 👑"},
+{c:"Acting Dialogues",t:"एक संधी पुरेशी असते,\nजर तयारी मनापासून केलेली असेल! 🌟"},
+
+/* नवीन Captions */
+{c:"Captions",t:"स्वतःवर प्रेम, स्वतःची ओळख. 💗"},
+{c:"Captions",t:"आजचा दिवस, नवी आशा. 🌸"},
+{c:"Captions",t:"थोडं हसू, भरपूर सकारात्मकता. ✨"},
+{c:"Captions",t:"माझी vibe, माझे नियम. 👑"},
+{c:"Captions",t:"साधेपणातच खरी सुंदरता. 🌷"},
+{c:"Captions",t:"Dream big, stay humble. 💫"},
+{c:"Captions",t:"मन सुंदर तर जग सुंदर. ❤️"},
+{c:"Captions",t:"Little moments, lovely memories. 📸"},
+{c:"Captions",t:"आज स्वतःची best version बनायचं. 🌟"},
+{c:"Captions",t:"हसत राहा, चमकत राहा. 😊"},
+
+/* नवीन Birthday Wishes */
+{c:"Birthday Wishes",t:"तुझ्या आयुष्यात आनंदाचे रंग भरू देत,\nप्रत्येक स्वप्नाला यश मिळू देत,\nवाढदिवसाच्या मनापासून शुभेच्छा! 🎂"},
+{c:"Birthday Wishes",t:"तुझ्या चेहऱ्यावरचं हसू कधी कमी होऊ नये,\nतुझ्या आयुष्यात आनंदाची कमी भासू नये. 🎉"},
+{c:"Birthday Wishes",t:"नवीन वर्ष, नवी स्वप्नं,\nनवीन संधी आणि नवा आनंद,\nतुझं आयुष्य सुंदर जावो! 🎂"},
+{c:"Birthday Wishes",t:"तुला आरोग्य, आनंद, प्रेम आणि यश लाभो.\nHappy Birthday! 🎈"},
+{c:"Birthday Wishes",t:"तुझ्या प्रत्येक दिवसात खास क्षण असू देत,\nआणि प्रत्येक क्षणात सुंदर आठवणी असू देत. 💝"},
+{c:"Birthday Wishes",t:"आजचा दिवस तुझ्यासारखाच सुंदर असो,\nतुझ्या मनातलं प्रत्येक स्वप्न पूर्ण होवो. 🎂"},
+{c:"Birthday Wishes",t:"तुझ्या आयुष्यात हसण्याची कारणं वाढत राहोत,\nआणि दुःख नेहमी दूर राहो. 🎉"},
+{c:"Birthday Wishes",t:"तुझ्या यशाचा प्रवास सुंदर होवो,\nआणि प्रत्येक पाऊल आनंद देणारे ठरो. 🌟"},
+{c:"Birthday Wishes",t:"आज फक्त तुझा दिवस आहे,\nमनसोक्त हस, आनंदाने जग!\nवाढदिवसाच्या शुभेच्छा! 🎁"},
+{c:"Birthday Wishes",t:"तुझ्या आयुष्यात प्रेम, मैत्री आणि समाधान भरभरून असो. ❤️"},
+
+/* नवीन Friendship */
+{c:"Friendship",t:"खरा मित्र तोच,\nजो चुका दाखवतो,\nपण कठीण वेळी,\nहात सोडत नाही. 🤝"},
+{c:"Friendship",t:"मैत्रीला रोज भेटण्याची गरज नाही,\nमनात जागा असली की अंतर महत्त्वाचं राहत नाही. 💛"},
+{c:"Friendship",t:"मित्रांसोबतचे क्षण,\nआयुष्यभर हसू देतात,\nजुन्या आठवणी पुन्हा,\nमनाला आनंद देतात. 😊"},
+{c:"Friendship",t:"काही मित्र कुटुंबासारखे असतात,\nआणि काही क्षण आयुष्यभराचे होतात. 💕"},
+{c:"Friendship",t:"राग, भांडणं आणि मस्ती,\nयांतच मैत्रीची खरी गंमत असते. 😄"},
+{c:"Friendship",t:"अडचणीच्या वेळी साथ देणारा,\nयशात मनापासून आनंद मानणारा,\nतोच खरा मित्र असतो. 🤗"},
+{c:"Friendship",t:"मैत्री म्हणजे परिपूर्ण माणसं नाहीत,\nतर एकमेकांच्या अपूर्णतेला स्वीकारणारी मनं. 💛"},
+{c:"Friendship",t:"एक कप चहा, भरपूर गप्पा,\nआणि मित्रांची साथ,\nएवढ्यातही सुंदर होतो,\nदिवसभराचा प्रवास. ☕"},
+{c:"Friendship",t:"जुने फोटो, वेड्या आठवणी,\nआणि न संपणाऱ्या गप्पा,\nमैत्रीमुळेच खास होतात,\nआयुष्यातल्या छोट्या गोष्टी साऱ्या. 📸"},
+{c:"Friendship",t:"वेळ बदलला तरी,\nमैत्रीतला विश्वास टिकू दे,\nआपल्या सुंदर आठवणींना,\nनेहमी मनात जागा असू दे. 💛"},
+
+/* नवीन Marathi Quotes */
+{c:"Marathi Quotes",t:"यश एका दिवसात मिळत नाही,\nपण रोजचा प्रयत्न एक दिवस यश देतो. 🌟"},
+{c:"Marathi Quotes",t:"स्वतःला कमी समजू नका,\nप्रत्येक व्यक्तीत एक खास गुण असतो. ✨"},
+{c:"Marathi Quotes",t:"चांगले विचार मनाला दिशा देतात,\nआणि चांगली कृती आयुष्य बदलते. 🌱"},
+{c:"Marathi Quotes",t:"वेळेची किंमत ओळखा,\nकारण गेलेला क्षण परत येत नाही. ⏳"},
+{c:"Marathi Quotes",t:"मोठं होण्यासाठी मोठी सुरुवात नको,\nफक्त छोटा प्रयत्न रोज हवा. 🌸"},
+{c:"Marathi Quotes",t:"इतरांना आदर द्या,\nआणि स्वतःचाही आदर जपा. ❤️"},
+{c:"Marathi Quotes",t:"मन शांत असेल तर,\nअनेक प्रश्नांची उत्तरं सापडतात. 🌿"},
+{c:"Marathi Quotes",t:"अपयश म्हणजे थांबण्याचं कारण नाही,\nतर नवी पद्धत शिकण्याची संधी आहे. 💫"},
+{c:"Marathi Quotes",t:"आनंद मोठ्या गोष्टींतच नसतो,\nकधी तो छोट्या क्षणांतही असतो. 😊"},
+{c:"Marathi Quotes",t:"स्वप्न पाहा, शिकत राहा,\nआणि स्वतःवरचा विश्वास जपत राहा. 👑"},
+];
+
+let active="सगळे";
+
+function escapeHTML(text){
+ return text.replace(/&/g,"&amp;")
+ .replace(/</g,"&lt;")
+ .replace(/>/g,"&gt;");
+}
+
+function renderCats(){
+ document.getElementById("categories").innerHTML=categories.map(([name,icon])=>
+ `<button class="category ${active===name?"active":""}" onclick="selectCategory('${name}')">
+ <span class="ico">${icon}</span><span>${name}</span></button>`
+ ).join("");
+}
+
+function selectCategory(name){
+ active=name;
+ renderCats();
+ renderPoems();
+ document.getElementById("poemHeading").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function renderPoems(){
+ const query=document.getElementById("search").value.trim().toLowerCase();
+ const list=poems.map((p,i)=>({...p,i})).filter(p=>
+ (active==="सगळे"||p.c===active)&&
+ (!query||(p.c+" "+p.t).toLowerCase().includes(query))
+ );
+
+ document.getElementById("poems").innerHTML=list.length
+ ?list.map(p=>`<div class="poem-item">
+ <div class="poem-category">#${escapeHTML(p.c)}</div>
+ <div class="poem-text">${escapeHTML(p.t)}</div>
+ <div class="poem-actions">
+ <button onclick="copyPoem(${p.i})">▢ Copy</button>
+ <button onclick="sharePoem(${p.i})">• Share</button>
+ </div></div>`).join("")
+ :`<div class="empty">काही सापडलं नाही. दुसरा शब्द शोधा 😊</div>`;
+}
+
+async function copyPoem(i){
+ try{
+  await navigator.clipboard.writeText(poems[i].t);
+  alert("कविता Copy झाली ❤️");
+ }catch(e){
+  window.prompt("मजकूर Copy करा:",poems[i].t);
+ }
+}
+
+async function sharePoem(i){
+ try{
+  if(navigator.share){
+   await navigator.share({title:"KavyaVaani",text:poems[i].t,url:location.href});
+  }else{
+   await copyPoem(i);
+  }
+ }catch(e){}
+}
+
+renderCats();
+renderPoems();
+</script>
+</body>
+</html>
+
+
